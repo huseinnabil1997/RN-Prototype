@@ -19,8 +19,7 @@ const Prototype = () => {
   const FullWidth = Dimensions.get('window').width;
   const [imageDimensions, setImageDimensions] = useState({ width: 300, height: 200 });
   const [selectedImage, setSelectedImage] = useState('');
-  const currentDate = new Date();
-  const timestamp = currentDate.toISOString();
+  const [timestamp, setTimestamp] = useState('')
 
   const captureView = async () => {
     try {
@@ -67,6 +66,8 @@ const Prototype = () => {
     launchImageLibrary(options, response => {
       const uri = response?.assets?.[0]?.uri;
       if (uri) {
+        const currentDate = new Date();
+        setTimestamp(currentDate.toLocaleString());
         setSelectedImage(uri);
         getImageDimensions(uri);
       }
@@ -86,6 +87,8 @@ const Prototype = () => {
     launchCamera(options, response => {
       const uri = response?.assets?.[0]?.uri;
       if (uri) {
+        const currentDate = new Date();
+        setTimestamp(currentDate.toLocaleString());
         setSelectedImage(uri);
         getImageDimensions(uri);
       }
@@ -94,7 +97,6 @@ const Prototype = () => {
 
   const getImageDimensions = (uri) => {
     Image.getSize(uri, (width, height) => {
-      // Calculate the aspect ratio and set the dimensions
       const aspectRatio = width / height;
       const calculatedHeight = FullWidth / aspectRatio;
       setImageDimensions({ width: FullWidth, height: calculatedHeight });
