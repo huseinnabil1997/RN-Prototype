@@ -164,7 +164,6 @@ const Prototype = () => {
                   paddingHorizontal: 20,
                   paddingVertical: 10,
                   borderRadius: 10,
-                  marginHorizontal: 5,
                 }}
                 onPress={() => takePhoto()}
               >
@@ -173,7 +172,7 @@ const Prototype = () => {
               <TouchableOpacity
                 style={{
                   backgroundColor: 'red',
-                  paddingHorizontal: 20,
+                  paddingHorizontal: 10,
                   paddingVertical: 10,
                   borderRadius: 10,
                   marginHorizontal: 5,

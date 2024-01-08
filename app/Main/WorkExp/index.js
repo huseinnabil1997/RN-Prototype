@@ -134,7 +134,7 @@ const WorkExp = () => {
           paddingTop: 15,
         }}>
         <ScrollView>
-          <View style={{flex: 3}}>
+          <View>
             <Text style={styles.DIA}>
               PT. Juke Solutions{'\n'}
               <Text style={{fontStyle: 'italic'}}>
@@ -155,7 +155,7 @@ const WorkExp = () => {
           <View style={(styles.tabContent, {height: 200})}>
             {juke == 'Juke' ? <EMIS /> : null}
           </View>
-          <View>
+          <View style={{ marginTop: 50 }}>
             <Text style={styles.DIA}>
               PT. Digital Integrasi Asia{'\n'}
               <Text style={{fontStyle: 'italic'}}>
@@ -184,7 +184,7 @@ const WorkExp = () => {
               {DIA == 'Fooddev' ? <Fooddev /> : <Privolive />}
             </View>
           </View>
-          <View style={{flex: 3}}>
+          <View style={{ marginTop: 50 }}>
             <Text style={styles.DIA}>
               PT. Ihsan Solusi Informatika{'\n'}
               <Text style={{fontStyle: 'italic'}}>(March 2020 - May 2021)</Text>
@@ -211,7 +211,7 @@ const WorkExp = () => {
           <View style={styles.tabContent}>
             {ISI == 'Autopay' ? <Autopay /> : <BahanaSekuritas />}
           </View>
-          <View style={{flex: 3}}>
+          <View style={{ marginTop: 50 }}>
             <Text style={styles.DIA}>
               PT. Sanbercode{'\n'}
               <Text style={{fontStyle: 'italic'}}>

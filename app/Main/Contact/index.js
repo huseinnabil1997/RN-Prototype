@@ -34,23 +34,23 @@ const Contact = () => {
           alignItems: 'center',
         }}>
         <View style={styles.textContainer}>
-          <Image source={require('assets/images/icons/address.png')} />
+          <Image style={{ height: 40, width: 40 }} source={require('assets/images/icons/address.png')} />
           <Text style={styles.text}>
-            Jl. Tubagus Ismail VIII No. 65, Kota Bandung
+            Jl. Tubagus Ismail VIII No. 65,{'\n'}Kota Bandung
           </Text>
         </View>
         <View style={styles.textContainer}>
-          <Image source={require('assets/images/icons/phone.png')} />
+          <Image style={{ height: 40, width: 40 }} source={require('assets/images/icons/phone.png')} />
           <Text style={styles.text}>081804834487</Text>
         </View>
         <View style={styles.textContainer}>
-          <Image source={require('assets/images/icons/email.png')} />
+          <Image style={{ height: 40, width: 40 }} source={require('assets/images/icons/email.png')} />
           <Text style={styles.text}>seinnabil@gmail.com</Text>
         </View>
         <View style={styles.textContainer}>
-          <Image source={require('assets/images/icons/linkedin.png')} />
+          <Image style={{ height: 40, width: 40 }} source={require('assets/images/icons/linkedin.png')} />
           <Text style={styles.text}>
-            https://www.linkedin.com/in/huseinnabil/
+            https://www.linkedin.com/in/{'\n'}huseinnabil/
           </Text>
         </View>
       </Animated.View>
